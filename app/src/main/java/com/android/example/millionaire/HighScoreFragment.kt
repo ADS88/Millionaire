@@ -10,15 +10,10 @@ import android.view.ViewGroup
 /**
  * A simple [Fragment] subclass.
  */
-class HighScoreFragment : Fragment() {
+class HighScoreFragment : Fragment(R.layout.fragment_high_score) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_high_score, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
-
 
 }
